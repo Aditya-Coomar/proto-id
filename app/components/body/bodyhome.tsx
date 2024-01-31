@@ -1,6 +1,6 @@
 import { ReactTyped } from "react-typed";
 import { logoTransparent } from "~/assets";
-import file from "public/test.zip";
+import file from "public/protoIDandroid.zip";
 
 export function Apply() {
   return (
