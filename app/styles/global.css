@@ -206,6 +206,14 @@ div .close:hover {
   transform: translateX(-50%);
 }
 
+.page-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
 div .apply-body{
   font-size: 20px;
   padding: 10px;
@@ -226,6 +234,29 @@ div .download {
 
 div .download:hover {
   text-decoration: none;
+  background-color: #121212;
+  color: #f5fffa;
+}
+
+div .four-oh-four{
+  font-size: 48px;
+}
+
+div .tag-four-oh-four{
+  font-size: 36px;
+  text-align: center;
+}
+
+div .back {
+  font-size: 32px;
+  border-radius: 0px;
+  padding-block: 6px;
+  padding-inline: 12px;
+  background-color: #121212;
+  color: #f5fffa;
+}
+
+div .back:hover {
   background-color: #121212;
   color: #f5fffa;
 }

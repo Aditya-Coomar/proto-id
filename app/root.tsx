@@ -1,6 +1,7 @@
 import stylesheet from "~/styles/global.css";
 import styles from 'bootstrap/dist/css/bootstrap.css';
 import type { LinksFunction } from "@remix-run/node";
+import { PageNotFound } from "~/components";
 import {
   Links,
   LiveReload,
@@ -34,3 +35,20 @@ export default function App() {
     </html>
   );
 }
+
+export function ErrorBoundary() {
+  return (
+    <html>
+      <head>
+        <title>Something weird happened...</title>
+        <Meta />
+        <Links />
+      </head>
+      <body>
+        <PageNotFound />
+        <Scripts />
+      </body>
+    </html>
+  );
+}
+
