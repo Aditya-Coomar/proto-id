@@ -1,4 +1,5 @@
-import { cssBundleHref } from "@remix-run/css-bundle";
+import stylesheet from "~/styles/global.css";
+import styles from 'bootstrap/dist/css/bootstrap.css';
 import type { LinksFunction } from "@remix-run/node";
 import {
   Links,
@@ -10,7 +11,8 @@ import {
 } from "@remix-run/react";
 
 export const links: LinksFunction = () => [
-  ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
+  {rel:"stylesheet", href: styles},
+  {rel:"stylesheet", href: stylesheet},
 ];
 
 export default function App() {
@@ -18,7 +20,8 @@ export default function App() {
     <html lang="en">
       <head>
         <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href={stylesheet}></link>
         <Meta />
         <Links />
       </head>
