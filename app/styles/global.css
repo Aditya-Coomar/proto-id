@@ -260,3 +260,35 @@ div .back:hover {
   background-color: #121212;
   color: #f5fffa;
 }
+
+div .right-link{
+  float: right;
+}
+
+div .left-link{
+  float: left;
+}
+
+.link-group{
+  padding-inline-end: 7vw;
+  padding-top: 200px;
+}
+
+div .navigate-dark {
+  font-size: 24px;
+  border-radius: 0px;
+  padding-block: 6px;
+  padding-inline: 12px;
+  background-color: #f5fffa;
+  color:#121212;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  
+}
+
+div .navigate-dark:hover {
+  text-decoration: none;
+  background-color: #f5fffa;
+  color:#121212;
+}

@@ -1,7 +1,6 @@
 import { ReactTyped } from "react-typed";
 import { logoTransparent } from "~/assets";
-import file from "public/test.zip"
-
+import file from "public/test.zip";
 
 export function Apply() {
   return (
@@ -51,7 +50,14 @@ export function Apply() {
                 <img src={logoTransparent} className="horizontal-center" />
               </div>
               <div className="apply-body">
-                <a href={file} type="button" className="btn btn-tertiary download horizontal-center" download>Download</a>
+                <a
+                  href={file}
+                  type="button"
+                  className="btn btn-tertiary download horizontal-center"
+                  download
+                >
+                  Download
+                </a>
               </div>
             </div>
             <div className="modal-footer">
@@ -100,6 +106,26 @@ export default function Hero() {
         >
           apply
         </button>
+      </div>
+      <div className="link-group">
+        <div>
+          <a
+            href="/products"
+            type="button"
+            className="btn btn-tertiary navigate-dark right-link"
+          >
+            products{" "}&#x2192;
+          </a>
+        </div>
+        <div>
+          <a
+            href="/pricing"
+            type="button"
+            className="btn btn-tertiary navigate-dark left-link"
+          >
+            &#x2190;{" "}pricing
+          </a>
+        </div>
       </div>
       <Apply />
     </main>
